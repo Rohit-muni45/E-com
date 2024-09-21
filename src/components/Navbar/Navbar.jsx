@@ -37,7 +37,7 @@ const Navbar = () => {
         <li><Link to="/about" >About</Link></li>
         <li><Link to="/products" >Products</Link></li>
         <li><Link to="/login"  >Login</Link></li>
-        <li><Link to="/cart" ><img src='../src/assets/shopping-cart.png' height="25px" />
+        <li><Link to="/cart" ><img src='https://i.imgur.com/PwUAjhW.png' height="25px" />
         {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
             </Link></li>
       </ul>
