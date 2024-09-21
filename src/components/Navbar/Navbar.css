@@ -1,0 +1,154 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .navbar-links .active {
+    color: #ff6b6b; 
+    border-bottom: 2px solid #ff6b6b;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar-links .inactive {
+    color: white;
+  }
+
+  .cart-count {
+    position: absolute;
+    top: 0px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 15px;
+    font-weight: bold; 
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .hamburger, .close-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger .line,
+  .close-icon .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 4px 0 ;
+  }
+  
+  .close-icon .line1 {
+    transform: rotate(45deg) translate(5px, 5px);  
+  }
+
+  .close-icon .line2 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      flex-direction: row; 
+    }
+
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: fixed;
+      transform: translateX(0%);
+      top: 0;
+      right: 0;
+      background-color: #1c859d;
+      padding-top: 30px;
+      width: 45%;
+      height: 100vh;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-links a {
+      margin: 20px;
+      font-size: large;
+    }
+
+    .hamburger {
+      display: flex;
+      z-index: 1;
+      position: absolute;
+      top: 10px;
+      right: 10px; 
+    }
+
+    .close-icon {
+      display: flex;
+      z-index: 2;
+      position: relative;
+      top: 10px;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+
+    #h1 {
+      font-size: 1.3rem; 
+    }
+
+    .cart-count {
+      position: relative;
+      font-size: 12px;
+    }
+  }
+  
