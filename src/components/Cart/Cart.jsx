@@ -49,7 +49,7 @@ const Cart = () => {
                   className='remove-item'
                   onClick={() => updateCart(cartItems.filter((i) => i.id !== item.id))}
                 >
-                  <img style={{width: '30px', height: '30px'}} className='remove-img' src="../src/assets/delete.png"  alt="Remove" /> 
+                  <img style={{width: '30px', height: '30px'}} className='remove-img' src="https://i.imgur.com/GWIi9xY.png"  alt="Remove" /> 
                 </div>
               </div>
             ))}
