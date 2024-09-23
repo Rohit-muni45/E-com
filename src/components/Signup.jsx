@@ -15,6 +15,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       await axios.post(`${BASE_URL}/signup`, formData);
+      alert('Sign up successful. Please log in.');
       navigate('/login');
     } catch (err) {
       console.error(err.message);
